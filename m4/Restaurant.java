@@ -48,11 +48,12 @@ public class Restaurant {
 				}
 			}
 			
-			while(running) {
+			while(true) {
 				try {
 					if (finishComanda()) {
 						running = false;
 					}
+					break;
 				}
 				catch(Exception e) {
 					System.out.println(e);
